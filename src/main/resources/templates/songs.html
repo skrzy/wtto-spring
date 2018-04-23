@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Getting Started: Serving Web Content</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Songs</h1>
+	<table>
+		<tr>
+			<th>Title</th>
+			<th>Genre</th>
+			<th>Year</th>
+			<th>Record label</th>
+		</tr>
+		<tr th:each="song : ${songs}">
+			<td th:text="${song.title}">Onions</td>
+			<td th:text="${song.genre}">2.41</td>
+			<td th:text="${song.year}">2.41</td>
+			<td th:text="${song.recordLabel}">2.41</td>
+		</tr>
+	</table>
+</body>
+</html>
